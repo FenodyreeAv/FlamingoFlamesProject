@@ -3,16 +3,16 @@ using UnityEngine;
 public class SimpleIL : MonoBehaviour
 {
     public Transform pivot, upper, lower, effector, tip;
-    public Vector3 target;
     public Transform targetTransform;
     public Vector3 normal = Vector3.up;
 
     public float speed = 5.0f;
+    public float maxDistanceFromTip = 5.0f; // Maximum allowable distance from the tip
+
+    private Rigidbody targetRigidbody; // Rigidbody for the target
 
     float upperLength, lowerLength, effectorLength, pivotLength;
     Vector3 effectorTarget, tipTarget;
-
-    private SpringJoint springJoint;
 
     void Reset()
     {
@@ -36,30 +36,67 @@ public class SimpleIL : MonoBehaviour
         lowerLength = (effector.position - lower.position).magnitude;
         effectorLength = (tip.position - effector.position).magnitude;
         pivotLength = (upper.position - pivot.position).magnitude;
-        target = targetTransform.position;
+
+        if (targetTransform != null)
+        {
+            // Ensure the targetTransform has a Rigidbody
+            targetRigidbody = targetTransform.GetComponent<Rigidbody>();
+            if (targetRigidbody == null)
+            {
+                targetRigidbody = targetTransform.gameObject.AddComponent<Rigidbody>();
+            }
+
+            // Configure the Rigidbody
+            targetRigidbody.isKinematic = false;
+            targetRigidbody.useGravity = false;
+        }
     }
 
     void Update()
     {
+        if (targetTransform == null || targetRigidbody == null)
+        {
+            Debug.LogWarning("Target Transform or Rigidbody is not assigned.");
+            return;
+        }
+
+        // Get input for movement
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+        float moveUpDown = Input.GetAxis("UpDown");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        target += movement * speed * Time.deltaTime;
+        // Calculate movement vector
+        Vector3 movement = new Vector3(moveHorizontal, moveUpDown, moveVertical) * speed;
 
-        tipTarget = target;
-        effectorTarget = target + normal * effectorLength;
+        // Apply movement using Rigidbody
+        targetRigidbody.velocity = movement;
+
+        // Constrain the targetTransform to stay within maxDistanceFromTip
+        float distanceFromTip = Vector3.Distance(targetTransform.position, tip.position);
+
+        //if (distanceFromTip > maxDistanceFromTip)
+        //{
+        //    // Calculate direction towards the tip
+        //    Vector3 direction = (tip.position - targetTransform.position).normalized;
+
+        //    // Move the targetTransform closer to the tip
+        //    Vector3 newPosition = targetTransform.position + direction * (distanceFromTip - maxDistanceFromTip);
+
+        //    // Apply the new position to the Rigidbody
+        //    targetRigidbody.MovePosition(newPosition);
+
+        //    // Stop movement if constrained
+        //    targetRigidbody.velocity = Vector3.zero;
+        //}
+
+        // Update effector and tip targets
+        tipTarget = targetTransform.position;
+        effectorTarget = tipTarget + normal * effectorLength;
+
+        // Solve the IK
         Solve();
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TryAttachOrgan();
-        }
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
-            DetachOrgan();
-        }
     }
+
 
     void Solve()
     {
@@ -83,32 +120,5 @@ public class SimpleIL : MonoBehaviour
         }
         var effectorRotation = Quaternion.LookRotation(tipTarget - effector.position);
         effector.rotation = effectorRotation;
-    }
-
-    void TryAttachOrgan()
-    {
-        Collider[] colliders = Physics.OverlapSphere(tip.position, 0.1f);
-        foreach (var collider in colliders)
-        {
-            if (collider.CompareTag("Organ"))
-            {
-                springJoint = tip.gameObject.AddComponent<SpringJoint>();
-                springJoint.connectedBody = collider.attachedRigidbody;
-                springJoint.spring = 10000.0f;
-                springJoint.damper = 1.0f;
-                springJoint.minDistance = 0.0f;
-                springJoint.maxDistance = 0.0f;
-                break;
-            }
-        }
-    }
-
-    void DetachOrgan()
-    {
-        if (springJoint != null)
-        {
-            Destroy(springJoint);
-            springJoint = null;
-        }
     }
 }

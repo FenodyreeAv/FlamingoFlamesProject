@@ -14,6 +14,20 @@ public class CreateSpringJoints : MonoBehaviour
     void Start()
     {
         CreateJoints();
+        IgnoreChildCollisions();
+    }
+
+    void IgnoreChildCollisions()
+    {
+        Collider[] childColliders = GetComponentsInChildren<Collider>(true);
+
+        for (int i = 0; i < childColliders.Length; i++)
+        {
+            for (int j = i + 1; j < childColliders.Length; j++)
+            {
+                Physics.IgnoreCollision(childColliders[i], childColliders[j]);
+            }
+        }
     }
 
     void CreateJoints()

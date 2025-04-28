@@ -5,31 +5,33 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public GameObject heart; // Reference to the heart object
-    [SerializeField] SpringJoint springJoint; // Reference to the spring joint
+    [SerializeField] FixedJoint fixedJoint; // Reference to the fixed joint
     [SerializeField] float touchDistance = 1.0f; // Maximum distance to "touch" the heart
-    [SerializeField] float springForce = 50.0f; // Spring force
-    [SerializeField] float damper = 5.0f; // Damper value
     [SerializeField] float breakForce = 10.0f; // Break force
+    [SerializeField] Color highlightColor = Color.yellow; // Color to highlight the object
+    [SerializeField] Color defaultColor = Color.white; // Default color of the object
 
+    private GameObject highlightedObject = null;
 
     // Update is called once per frame
     void Update()
     {
+        HighlightClosestObject();
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //print("Space key pressed");
-            if (springJoint != null)
+            if (fixedJoint != null)
             {
-                RemoveSpringJoint();
+                RemoveFixedJoint();
             }
             else
             {
-                AddSpringJoint();
+                AddFixedJoint();
             }
         }
     }
 
-    void AddSpringJoint()
+    void HighlightClosestObject()
     {
         GameObject closestObject = null;
         float closestDistance = float.MaxValue;
@@ -39,44 +41,70 @@ public class PlayerController : MonoBehaviour
 
         foreach (GameObject obj in grabbableObjects)
         {
-            // Check if the object has a Rigidbody component
-            Rigidbody rb = obj.GetComponent<Rigidbody>();
-            if (rb != null)
+            float distance = Vector3.Distance(transform.position, obj.transform.position);
+            if (distance < closestDistance)
             {
-                float distance = Vector3.Distance(transform.position, obj.transform.position);
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    closestObject = obj;
-                }
+                closestDistance = distance;
+                closestObject = obj;
             }
         }
 
         // Check if the closest object is within the touch distance
         if (closestObject != null && closestDistance <= touchDistance)
         {
-            springJoint = closestObject.AddComponent<SpringJoint>();
-            springJoint.connectedBody = this.GetComponent<Rigidbody>();
-            springJoint.spring = springForce;
-            springJoint.damper = damper;
-            springJoint.anchor = Vector3.zero; // Adjust the anchor as needed
-            springJoint.breakForce = breakForce; // Set the break force
+            if (highlightedObject != closestObject)
+            {
+                // Remove highlight from the previously highlighted object
+                if (highlightedObject != null)
+                {
+                    SetObjectColor(highlightedObject, defaultColor);
+                }
+
+                // Highlight the new closest object
+                highlightedObject = closestObject;
+                SetObjectColor(highlightedObject, highlightColor);
+            }
         }
         else
         {
-            Debug.Log("No grabbable object within range to attach the spring joint.");
+            // Remove highlight if no object is within range
+            if (highlightedObject != null)
+            {
+                SetObjectColor(highlightedObject, defaultColor);
+                highlightedObject = null;
+            }
         }
     }
 
-
-
-
-    void RemoveSpringJoint()
+    void SetObjectColor(GameObject obj, Color color)
     {
-        if (springJoint != null)
+        Renderer renderer = obj.GetComponent<Renderer>();
+        if (renderer != null)
         {
-            Destroy(springJoint);
-            springJoint = null;
+            renderer.material.color = color;
+        }
+    }
+
+    void AddFixedJoint()
+    {
+        if (highlightedObject != null)
+        {
+            fixedJoint = highlightedObject.AddComponent<FixedJoint>();
+            fixedJoint.connectedBody = this.GetComponent<Rigidbody>();
+            fixedJoint.breakForce = breakForce; // Set the break force
+        }
+        else
+        {
+            Debug.Log("No grabbable object within range to attach the fixed joint.");
+        }
+    }
+
+    void RemoveFixedJoint()
+    {
+        if (fixedJoint != null)
+        {
+            Destroy(fixedJoint);
+            fixedJoint = null;
         }
     }
 }

@@ -46,6 +46,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 2601285163316539902, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 3707977206070464216, guid: a24ad3926e07ae2458f372e800532517, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.21267366
@@ -86,9 +90,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4481085142186862356, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375093886023408446, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 6827300822228735442, guid: a24ad3926e07ae2458f372e800532517, type: 3}
       propertyPath: m_Name
       value: P2_Draw_Top_Handle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827300822228735442, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8173211475273199568, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -111,6 +131,10 @@ PrefabInstance:
     - target: {fileID: 2171121037383911129, guid: a24ad3926e07ae2458f372e800532517, type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601285163316539902, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
       objectReference: {fileID: 0}
     - target: {fileID: 3707977206070464216, guid: a24ad3926e07ae2458f372e800532517, type: 3}
       propertyPath: m_LocalPosition.x
@@ -152,9 +176,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4481085142186862356, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375093886023408446, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 6827300822228735442, guid: a24ad3926e07ae2458f372e800532517, type: 3}
       propertyPath: m_Name
       value: P2_Draw_Top_Handle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827300822228735442, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8173211475273199568, guid: a24ad3926e07ae2458f372e800532517, type: 3}
+      propertyPath: m_TagString
+      value: GrabbableObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
