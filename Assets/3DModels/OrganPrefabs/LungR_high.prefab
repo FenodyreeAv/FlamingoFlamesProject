@@ -660,7 +660,7 @@ GameObject:
   - component: {fileID: 3278491238517417728}
   - component: {fileID: 3638362481827916527}
   m_Layer: 0
-  m_Name: LungR_high (1)
+  m_Name: LungR_high
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,9 +674,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7599516637003327581}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70054173, z: -0, w: -0.7136115}
-  m_LocalPosition: {x: -5.8440914, y: 1.66, z: -9.775986}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.9880997, z: -0, w: -0.15381502}
+  m_LocalPosition: {x: 16.378, y: -9.621679, z: -23.704586}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6071246290491809632}
@@ -686,7 +686,7 @@ Transform:
   - {fileID: 6097029947840010912}
   - {fileID: 6067399655895890267}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -448.941, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -522.304, z: 0}
 --- !u!137 &6405732905072620706
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
