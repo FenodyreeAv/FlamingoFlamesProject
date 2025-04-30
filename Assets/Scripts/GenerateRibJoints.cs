@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class GenerateRibJoints : MonoBehaviour
 {
-    [SerializeField]
-    private float breakForce = 100f; // Force at which the joint will break
+    [SerializeField] private float breakForce = 100f; // Force at which the joint will break
 
     void Start()
     {

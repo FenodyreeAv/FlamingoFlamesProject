@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject heart; // Reference to the heart object
-    [SerializeField] FixedJoint fixedJoint; // Reference to the fixed joint
-    [SerializeField] float touchDistance = 1.0f; // Maximum distance to "touch" the heart
-    [SerializeField] float breakForce = 10.0f; // Break force
-    [SerializeField] Color highlightColor = Color.yellow; // Color to highlight the object
-    [SerializeField] Color defaultColor = Color.white; // Default color of the object
+    [SerializeField] FixedJoint fixedJoint;
+
+    [SerializeField] float touchDistance = 1.0f;
+    [SerializeField] float breakForce = 10.0f;
+
+    [SerializeField] Color highlightColor = Color.yellow;
+    [SerializeField] Color defaultColor = Color.white;
 
     private GameObject highlightedObject = null;
 
