@@ -113,12 +113,16 @@ public class SimpleIL : MonoBehaviour
 
         if (!float.IsNaN(C))
         {
-            var upperRotation = Quaternion.AngleAxis((-B), Vector3.right);
+            // Constrain upper rotation to X-axis only
+            var upperRotation = Quaternion.AngleAxis(-B, Vector3.right);
             upper.localRotation = upperRotation;
+
             var lowerRotation = Quaternion.AngleAxis(180 - C, Vector3.right);
             lower.localRotation = lowerRotation;
         }
+
         var effectorRotation = Quaternion.LookRotation(tipTarget - effector.position);
         effector.rotation = effectorRotation;
     }
+
 }
