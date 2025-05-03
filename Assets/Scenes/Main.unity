@@ -3824,7 +3824,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 393a33961308da64fb906ada7de0195c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: e0ed824246b8ed14fa565413a4ccd11a, type: 2}
+      objectReference: {fileID: 2100000, guid: ee86500813cb28745ac5af3b69a0409e, type: 2}
     - target: {fileID: 919132149155446097, guid: 393a33961308da64fb906ada7de0195c, type: 3}
       propertyPath: m_Name
       value: ChestCavity_high
