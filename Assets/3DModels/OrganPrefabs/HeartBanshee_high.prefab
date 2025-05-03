@@ -332,7 +332,6 @@ GameObject:
   - component: {fileID: 4223671747776491559}
   - component: {fileID: 8582233243533168606}
   - component: {fileID: 8792985883379736972}
-  - component: {fileID: 7053748156294729209}
   m_Layer: 0
   m_Name: HeartBanshee_high
   m_TagString: Untagged
@@ -387,7 +386,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7791486788655378091, guid: 019e3998102c3ca4798d13e8e2265f84, type: 3}
+  - {fileID: 3685813966592044776, guid: 019e3998102c3ca4798d13e8e2265f84, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -412,7 +411,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 561241364456030428, guid: 019e3998102c3ca4798d13e8e2265f84, type: 3}
+  m_Mesh: {fileID: 8251267729714068857, guid: 019e3998102c3ca4798d13e8e2265f84, type: 3}
   m_Bones:
   - {fileID: 2623118349613782459}
   - {fileID: 8586654677463023330}
@@ -457,23 +456,6 @@ MonoBehaviour:
   minDistance: 0
   maxDistance: 0
   configureConnectedAnchor: 0
---- !u!114 &7053748156294729209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3591250987825916573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7991dbe2363d5de4b861c9ddb89dd0a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spring: 50
-  damper: 5
-  minDistance: 0
-  maxDistance: 0
-  configureConnectedAnchor: 1
 --- !u!1 &3642407012642987853
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,10 +742,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
-  m_Height: 1
+  m_Radius: 0.14015867
+  m_Height: 0.87
   m_Direction: 0
-  m_Center: {x: -0.3, y: -0.1, z: 0}
+  m_Center: {x: -0.4, y: -0.07, z: -0.06}
 --- !u!1 &5232852543907353698
 GameObject:
   m_ObjectHideFlags: 0
