@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 8897055531483344338}
   - component: {fileID: 5649282825497075552}
   - component: {fileID: 7393883236719052567}
+  - component: {fileID: 7628726837725158213}
+  - component: {fileID: 7139613729517232540}
   m_Layer: 0
   m_Name: StomachGlass_high
-  m_TagString: Untagged
+  m_TagString: Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,9 +32,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.14529152, y: -0.6960775, z: -0.6942124, w: 0.11151536}
   m_LocalPosition: {x: -0.234, y: 5.109, z: -4.193}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_LocalScale: {x: 0.41, y: 0.41, z: 0.41}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 2156744082388381305}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 272.741, y: 103.626, z: 97.305}
 --- !u!33 &6673287465730431256
@@ -96,7 +99,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6951390335898651655}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.4
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -134,5 +137,134 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1488091, y: 1.6339843, z: 0.8665955}
-  m_Center: {x: -0.5094556, y: 0.80185795, z: 0}
+  m_Size: {x: 0.8164483, y: 0.6949373, z: 0.6160282}
+  m_Center: {x: -0.47083595, y: 0.33233064, z: -0.002584953}
+--- !u!138 &7628726837725158213
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951390335898651655}
+  serializedVersion: 1
+  m_ConnectedBody: {fileID: 1526621643872773408}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!135 &7139613729517232540
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951390335898651655}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.45
+  m_Center: {x: -0.55, y: 0.31, z: 0.01}
+--- !u!1 &8866530130009119113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2156744082388381305}
+  - component: {fileID: 8991676105701385798}
+  - component: {fileID: 1526621643872773408}
+  - component: {fileID: 2548533557653693529}
+  m_Layer: 0
+  m_Name: StomachGlass_high
+  m_TagString: GrabbableObject
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2156744082388381305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866530130009119113}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.01478236, y: -0.0018947867, z: 0.31125394, w: 0.9502099}
+  m_LocalPosition: {x: -0.1208042, y: -0.3324861, z: 0.0038257837}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7724689321107838653}
+  m_LocalEulerAnglesHint: {x: 178.323, y: 180.321, z: 216.278}
+--- !u!33 &8991676105701385798
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866530130009119113}
+  m_Mesh: {fileID: -8668434623855709232, guid: e2017745f98c0f7448594c54cb6c6f86, type: 3}
+--- !u!54 &1526621643872773408
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866530130009119113}
+  serializedVersion: 4
+  m_Mass: 0.5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &2548533557653693529
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866530130009119113}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.10767353
+  m_Height: 0.61
+  m_Direction: 1
+  m_Center: {x: -0.06, y: 0.07, z: 0}

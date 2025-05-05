@@ -73,6 +73,10 @@ PrefabInstance:
       value: Scalpel
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e52afd879e02cc841bca5f060f2cd51b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52afd879e02cc841bca5f060f2cd51b, type: 3}
       propertyPath: m_TagString
       value: GrabbableObject
       objectReference: {fileID: 0}

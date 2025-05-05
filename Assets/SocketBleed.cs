@@ -11,9 +11,10 @@ public class SocketBleed : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Start bleeding only if the object has the "Tool" tag
-        if (!isBleeding && other.CompareTag("Tool"))
+        // Start bleeding only if the object's name is "Scalpel" or "Saw"
+        if (!isBleeding)
         {
+            Debug.Log("Bleeding started");
             isBleeding = true;
             bleedCoroutine = StartCoroutine(SpawnBleedParticles());
         }
@@ -33,11 +34,15 @@ public class SocketBleed : MonoBehaviour
     {
         while (isBleeding)
         {
-            // Spawn the particle system at the current position and rotation
-            Instantiate(socketBleedParticleSystem, transform.position, transform.rotation);
+            // Generate a random rotation
+            Quaternion randomRotation = Random.rotation;
+
+            // Spawn the particle system at the current position with the random rotation
+            Instantiate(socketBleedParticleSystem, transform.position, randomRotation);
 
             // Wait for 1 second before spawning the next particle system
             yield return new WaitForSeconds(1f);
         }
     }
+
 }

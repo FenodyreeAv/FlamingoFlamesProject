@@ -660,8 +660,8 @@ GameObject:
   - component: {fileID: 3278491238517417728}
   - component: {fileID: 3638362481827916527}
   m_Layer: 0
-  m_Name: LungR_High
-  m_TagString: Untagged
+  m_Name: LungR_high
+  m_TagString: Organ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

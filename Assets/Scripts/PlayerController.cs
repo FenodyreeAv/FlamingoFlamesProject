@@ -116,11 +116,25 @@ public class PlayerController : MonoBehaviour
                 if (highlightedObject != null)
                 {
                     SetObjectColor(highlightedObject, defaultColor);
+
+                    // Reset the parent's color if it has the "Organ" tag
+                    Transform parent = highlightedObject.transform.parent;
+                    if (parent != null && parent.CompareTag("Organ"))
+                    {
+                        SetObjectColor(parent.gameObject, defaultColor);
+                    }
                 }
 
                 // Highlight the new closest object
                 highlightedObject = closestObject;
                 SetObjectColor(highlightedObject, highlightColor);
+
+                // Check if the parent has the "Organ" tag and change its color
+                Transform newParent = highlightedObject.transform.parent;
+                if (newParent != null && newParent.CompareTag("Organ"))
+                {
+                    SetObjectColor(newParent.gameObject, highlightColor);
+                }
             }
         }
         else
@@ -129,10 +143,19 @@ public class PlayerController : MonoBehaviour
             if (highlightedObject != null)
             {
                 SetObjectColor(highlightedObject, defaultColor);
+
+                // Reset the parent's color if it has the "Organ" tag
+                Transform parent = highlightedObject.transform.parent;
+                if (parent != null && parent.CompareTag("Organ"))
+                {
+                    SetObjectColor(parent.gameObject, defaultColor);
+                }
+
                 highlightedObject = null;
             }
         }
     }
+
 
     void SetObjectColor(GameObject obj, Color color)
     {
