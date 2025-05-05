@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] FixedJoint fixedJoint;
 
-    [SerializeField] float touchDistance = 1.0f;
     [SerializeField] float breakForce = 10.0f;
 
     [SerializeField] Color highlightColor = Color.yellow;
@@ -15,7 +14,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Rigidbody targetRigidbody; // Reference to the Target's Rigidbody
     [SerializeField] Rigidbody tipRigidbody; // Reference to the Tip's Rigidbody
     [SerializeField] float forceAmount = 10.0f; // Force magnitude
-    [SerializeField] float torqueAmount = 10.0f; // Torque magnitude
 
     [SerializeField] Collider thisCollider;
 
@@ -167,50 +165,4 @@ public class PlayerController : MonoBehaviour
             fixedJoint = null;
         }
     }
-
-
 }
-
-
-
-
-
-//void HighlightClosestObject()
-//{
-//    GameObject closestObject = null;
-//    float closestDistance = float.MaxValue;
-
-//    GameObject[] grabbableObjects = GameObject.FindGameObjectsWithTag("GrabbableObject");
-
-//    foreach (GameObject obj in grabbableObjects)
-//    {
-//        float distance = Vector3.Distance(transform.position, obj.transform.position);
-//        if (distance < closestDistance)
-//        {
-//            closestDistance = distance;
-//            closestObject = obj;
-//        }
-//    }
-
-//    if (closestObject != null && closestDistance <= touchDistance)
-//    {
-//        if (highlightedObject != closestObject)
-//        {
-//            if (highlightedObject != null)
-//            {
-//                SetObjectColor(highlightedObject, defaultColor);
-//            }
-
-//            highlightedObject = closestObject;
-//            SetObjectColor(highlightedObject, highlightColor);
-//        }
-//    }
-//    else
-//    {
-//        if (highlightedObject != null)
-//        {
-//            SetObjectColor(highlightedObject, defaultColor);
-//            highlightedObject = null;
-//        }
-//    }
-//}

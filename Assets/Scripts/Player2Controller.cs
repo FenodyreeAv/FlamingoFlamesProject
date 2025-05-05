@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class Player2Controller : MonoBehaviour
 {
-    [SerializeField] FixedJoint fixedJoint;
+    [SerializeField] FixedJoint fixedJoint; //This is the joint that picks up objects
 
-    [SerializeField] float touchDistance = 1.0f;
-    [SerializeField] float breakForce = 10.0f;
+    [SerializeField] float breakForce = 10.0f; //Force required to drop an object by mistake
 
     [SerializeField] Color highlightColor = Color.yellow;
-    [SerializeField] Color defaultColor = Color.white;
+    [SerializeField] Color defaultColor = Color.white; //Kay change this to the colour your textures are set to
 
     [SerializeField] Rigidbody targetRigidbody; // Reference to the Target's Rigidbody
     [SerializeField] Rigidbody tipRigidbody; // Reference to the Tip's Rigidbody
-    [SerializeField] float forceAmount = 10.0f; // Force magnitude
-    [SerializeField] float torqueAmount = 10.0f; // Torque magnitude
 
-    [SerializeField] Collider thisCollider;
+    [SerializeField] float forceAmount = 10.0f; // Force magnitude
+
+    [SerializeField] Collider thisCollider; //Reference to the the collider this script is attached to
 
     private GameObject highlightedObject = null;
     [SerializeField] private List<Collider> overlappingColliders = new List<Collider>(); // List to track overlapping colliders
@@ -26,7 +25,7 @@ public class Player2Controller : MonoBehaviour
     {
         HighlightClosestObject();
 
-        if (Input.GetKeyDown(KeyCode.LeftControl)) // Changed from Space to LeftControl
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             if (fixedJoint != null)
             {
@@ -41,31 +40,31 @@ public class Player2Controller : MonoBehaviour
         // Control Target's position using forces in global directions
         if (targetRigidbody != null && tipRigidbody != null)
         {
-            if (Input.GetKey(KeyCode.UpArrow)) // Changed from W to UpArrow
+            if (Input.GetKey(KeyCode.UpArrow))
             {
                 targetRigidbody.AddForce(Vector3.forward * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.forward * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.DownArrow)) // Changed from S to DownArrow
+            if (Input.GetKey(KeyCode.DownArrow))
             {
                 targetRigidbody.AddForce(Vector3.back * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.back * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.LeftArrow)) // Changed from A to LeftArrow
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
                 targetRigidbody.AddForce(Vector3.left * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.left * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.RightArrow)) // Changed from D to RightArrow
+            if (Input.GetKey(KeyCode.RightArrow))
             {
                 targetRigidbody.AddForce(Vector3.right * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.right * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.PageUp)) // Changed from Q to PageUp
+            if (Input.GetKey(KeyCode.PageUp))
             {
                 tipRigidbody.AddForce(Vector3.up * forceAmount, ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.PageDown)) // Changed from E to PageDown
+            if (Input.GetKey(KeyCode.PageDown))
             {
                 tipRigidbody.AddForce(Vector3.down * forceAmount, ForceMode.Force);
             }
