@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SocketBleed : MonoBehaviour
 {
-    [SerializeField] private GameObject socketBleedOrgan;
+    [SerializeField] public GameObject socketBleedOrgan;
     [SerializeField] private GameObject socketBleedParticleSystem;
     private bool isBleeding = false;
     private Coroutine bleedCoroutine;

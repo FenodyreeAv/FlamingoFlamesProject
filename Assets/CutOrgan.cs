@@ -9,18 +9,28 @@ public class CutOrgan : MonoBehaviour
         // Check if the collided object has the tag "Socket"
         if (other.gameObject.CompareTag("Socket"))
         {
-            // Find the Rigidbody of the child of the socket object
-            Rigidbody childRigidbody = other.gameObject.GetComponentInChildren<Rigidbody>();
+            // Get the SocketBleed component from the collided object
+            SocketBleed socketBleed = other.gameObject.GetComponent<SocketBleed>();
 
-            if (childRigidbody != null)
+            if (socketBleed != null && socketBleed.socketBleedOrgan != null)
             {
-                // Make the Rigidbody non-kinematic
-                childRigidbody.isKinematic = false;
-                Debug.Log("Child Rigidbody of the socket is now non-kinematic.");
+                // Access the socketBleedOrgan and perform operations
+                Rigidbody organRigidbody = socketBleed.socketBleedOrgan.GetComponent<Rigidbody>();
+
+                if (organRigidbody != null)
+                {
+                    // Make the Rigidbody non-kinematic
+                    organRigidbody.isKinematic = false;
+                    Debug.Log("socketBleedOrgan's Rigidbody is now non-kinematic.");
+                }
+                else
+                {
+                    Debug.LogWarning("No Rigidbody found on the socketBleedOrgan.");
+                }
             }
             else
             {
-                Debug.LogWarning("No Rigidbody found in the children of the socket object.");
+                Debug.LogWarning("SocketBleed component or socketBleedOrgan is missing.");
             }
         }
     }
