@@ -39,36 +39,35 @@ public class PlayerController : MonoBehaviour
         }
 
         // Control Target's position using forces in global directions
-        if (targetRigidbody != null)
+        if (targetRigidbody != null && tipRigidbody != null)
         {
             if (Input.GetKey(KeyCode.W))
             {
                 targetRigidbody.AddForce(Vector3.forward * forceAmount, ForceMode.Force);
+                tipRigidbody.AddForce(Vector3.forward * (forceAmount * 0.2f), ForceMode.Force);
             }
             if (Input.GetKey(KeyCode.S))
             {
                 targetRigidbody.AddForce(Vector3.back * forceAmount, ForceMode.Force);
+                tipRigidbody.AddForce(Vector3.back * (forceAmount * 0.2f), ForceMode.Force);
             }
             if (Input.GetKey(KeyCode.A))
             {
                 targetRigidbody.AddForce(Vector3.left * forceAmount, ForceMode.Force);
+                tipRigidbody.AddForce(Vector3.left * (forceAmount * 0.2f), ForceMode.Force);
             }
             if (Input.GetKey(KeyCode.D))
             {
                 targetRigidbody.AddForce(Vector3.right * forceAmount, ForceMode.Force);
+                tipRigidbody.AddForce(Vector3.right * (forceAmount * 0.2f), ForceMode.Force);
             }
-
-            // Control Target's rotation using torques
-            if (tipRigidbody != null)
+            if (Input.GetKey(KeyCode.Q))
             {
-                if (Input.GetKey(KeyCode.Q))
-                {
-                    tipRigidbody.AddForce(Vector3.up * forceAmount, ForceMode.Force);
-                }
-                if (Input.GetKey(KeyCode.E))
-                {
-                    tipRigidbody.AddForce(Vector3.down * forceAmount, ForceMode.Force);
-                }
+                tipRigidbody.AddForce(Vector3.up * forceAmount, ForceMode.Force);
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                tipRigidbody.AddForce(Vector3.down * forceAmount, ForceMode.Force);
             }
         }
     }
