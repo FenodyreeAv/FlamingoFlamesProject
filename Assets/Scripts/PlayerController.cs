@@ -12,9 +12,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Color highlightColor = Color.yellow;
     [SerializeField] Color defaultColor = Color.white;
 
-    private GameObject highlightedObject = null;
+    [SerializeField] Rigidbody targetRigidbody; // Reference to the Target's Rigidbody
+    [SerializeField] Rigidbody tipRigidbody; // Reference to the Tip's Rigidbody
+    [SerializeField] float forceAmount = 10.0f; // Force magnitude
+    [SerializeField] float torqueAmount = 10.0f; // Torque magnitude
 
-    // Update is called once per frame
+    [SerializeField] Collider thisCollider;
+
+    private GameObject highlightedObject = null;
+    [SerializeField] private List<Collider> overlappingColliders = new List<Collider>(); // List to track overlapping colliders
+
     void Update()
     {
         HighlightClosestObject();
@@ -30,28 +37,81 @@ public class PlayerController : MonoBehaviour
                 AddFixedJoint();
             }
         }
+
+        // Control Target's position using forces in global directions
+        if (targetRigidbody != null)
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                targetRigidbody.AddForce(Vector3.forward * forceAmount, ForceMode.Force);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                targetRigidbody.AddForce(Vector3.back * forceAmount, ForceMode.Force);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                targetRigidbody.AddForce(Vector3.left * forceAmount, ForceMode.Force);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                targetRigidbody.AddForce(Vector3.right * forceAmount, ForceMode.Force);
+            }
+
+            // Control Target's rotation using torques
+            if (tipRigidbody != null)
+            {
+                if (Input.GetKey(KeyCode.Q))
+                {
+                    tipRigidbody.AddForce(Vector3.up * forceAmount, ForceMode.Force);
+                }
+                if (Input.GetKey(KeyCode.E))
+                {
+                    tipRigidbody.AddForce(Vector3.down * forceAmount, ForceMode.Force);
+                }
+            }
+        }
     }
 
+    // Add collider to the list when it enters the trigger
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("GrabbableObject"))
+        {
+            if (!overlappingColliders.Contains(other))
+            {
+                overlappingColliders.Add(other);
+            }
+        }
+    }
+
+    // Remove collider from the list when it exits the trigger
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("GrabbableObject"))
+        {
+            if (overlappingColliders.Contains(other))
+            {
+                overlappingColliders.Remove(other);
+            }
+        }
+    }
     void HighlightClosestObject()
     {
         GameObject closestObject = null;
-        float closestDistance = float.MaxValue;
 
-        // Find all objects with the "GrabbableObject" tag
-        GameObject[] grabbableObjects = GameObject.FindGameObjectsWithTag("GrabbableObject");
-
-        foreach (GameObject obj in grabbableObjects)
+        // Find the closest overlapping collider with the "GrabbableObject" tag
+        foreach (Collider collider in overlappingColliders)
         {
-            float distance = Vector3.Distance(transform.position, obj.transform.position);
-            if (distance < closestDistance)
+            if (collider.CompareTag("GrabbableObject"))
             {
-                closestDistance = distance;
-                closestObject = obj;
+                closestObject = collider.gameObject;
+                break; // Stop at the first overlapping grabbable object
             }
         }
 
-        // Check if the closest object is within the touch distance
-        if (closestObject != null && closestDistance <= touchDistance)
+        // Check if there is an overlapping grabbable object
+        if (closestObject != null)
         {
             if (highlightedObject != closestObject)
             {
@@ -68,7 +128,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // Remove highlight if no object is within range
+            // Remove highlight if no object is overlapping
             if (highlightedObject != null)
             {
                 SetObjectColor(highlightedObject, defaultColor);
@@ -92,7 +152,7 @@ public class PlayerController : MonoBehaviour
         {
             fixedJoint = highlightedObject.AddComponent<FixedJoint>();
             fixedJoint.connectedBody = this.GetComponent<Rigidbody>();
-            fixedJoint.breakForce = breakForce; // Set the break force
+            fixedJoint.breakForce = breakForce;
         }
         else
         {
@@ -108,4 +168,50 @@ public class PlayerController : MonoBehaviour
             fixedJoint = null;
         }
     }
+
+
 }
+
+
+
+
+
+//void HighlightClosestObject()
+//{
+//    GameObject closestObject = null;
+//    float closestDistance = float.MaxValue;
+
+//    GameObject[] grabbableObjects = GameObject.FindGameObjectsWithTag("GrabbableObject");
+
+//    foreach (GameObject obj in grabbableObjects)
+//    {
+//        float distance = Vector3.Distance(transform.position, obj.transform.position);
+//        if (distance < closestDistance)
+//        {
+//            closestDistance = distance;
+//            closestObject = obj;
+//        }
+//    }
+
+//    if (closestObject != null && closestDistance <= touchDistance)
+//    {
+//        if (highlightedObject != closestObject)
+//        {
+//            if (highlightedObject != null)
+//            {
+//                SetObjectColor(highlightedObject, defaultColor);
+//            }
+
+//            highlightedObject = closestObject;
+//            SetObjectColor(highlightedObject, highlightColor);
+//        }
+//    }
+//    else
+//    {
+//        if (highlightedObject != null)
+//        {
+//            SetObjectColor(highlightedObject, defaultColor);
+//            highlightedObject = null;
+//        }
+//    }
+//}

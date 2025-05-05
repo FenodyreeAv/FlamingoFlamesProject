@@ -455,7 +455,7 @@ MonoBehaviour:
   damper: 5
   minDistance: 0
   maxDistance: 0
-  configureConnectedAnchor: 0
+  configureConnectedAnchor: 1
 --- !u!1 &3642407012642987853
 GameObject:
   m_ObjectHideFlags: 0

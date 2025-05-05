@@ -10,11 +10,14 @@ public class CreateSpringJoints : MonoBehaviour
     public float maxDistance = 0.0f;
     public bool configureConnectedAnchor = false;
 
+    SpringJoint[] springJoints;
+
     // Start is called before the first frame update
     void Start()
     {
         CreateJoints();
         IgnoreChildCollisions();
+        springJoints = GetComponentsInChildren<SpringJoint>();
     }
 
     void IgnoreChildCollisions()
@@ -43,6 +46,7 @@ public class CreateSpringJoints : MonoBehaviour
             }
         }
 
+        // Attach children to each other
         foreach (Transform child in childTransforms)
         {
             foreach (Transform target in childTransforms)
@@ -59,11 +63,33 @@ public class CreateSpringJoints : MonoBehaviour
                 }
             }
         }
+
+        foreach (Transform child in childTransforms)
+        {
+            SpringJoint parentSpringJoint = this.gameObject.AddComponent<SpringJoint>();
+            parentSpringJoint.connectedBody = child.GetComponent<Rigidbody>();
+            parentSpringJoint.spring = spring * 2.0f; //Extra strong, for general rigidity
+            parentSpringJoint.damper = damper;
+            parentSpringJoint.minDistance = minDistance;
+            parentSpringJoint.maxDistance = maxDistance;
+            parentSpringJoint.autoConfigureConnectedAnchor = configureConnectedAnchor;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Debug.isDebugBuild) //Only run this in debug builds
+        {
+            foreach (SpringJoint springJoint in springJoints)
+            {
+                // Update the spring properties in real time
+                springJoint.spring = spring;
+                springJoint.damper = damper;
+                springJoint.minDistance = minDistance;
+                springJoint.maxDistance = maxDistance;
+                springJoint.autoConfigureConnectedAnchor = configureConnectedAnchor;
+            }
+        }
     }
 }
