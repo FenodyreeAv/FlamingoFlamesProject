@@ -5537,6 +5537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7118383060892690831}
   - component: {fileID: 6932604716824897234}
+  - component: {fileID: 7118383060892690832}
   m_Layer: 0
   m_Name: lefthandhigh
   m_TagString: Untagged
@@ -6131,11 +6132,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.39770648, y: -0.5846619, z: 0.5846619, w: 0.39770648}
   m_LocalPosition: {x: 0.113, y: 0, z: 0.258}
-  m_LocalScale: {x: 1.31, y: 1.31, z: 1.31}
+  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8783245949802532191}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 111.55}
+--- !u!95 &7118383060892690832
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624051059379458326}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5b749e5491ef1cc42a004a049feba9bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &7519676498919837737
 MeshRenderer:
   m_ObjectHideFlags: 0
