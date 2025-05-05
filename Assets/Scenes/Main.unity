@@ -10451,6 +10451,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Rib
       objectReference: {fileID: 0}
+    - target: {fileID: 3948595029977185123, guid: 11283f9fc808e4c40910c2af0af5fa60, type: 3}
+      propertyPath: MinDistance
+      value: 0.9641223
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948595029977185123, guid: 11283f9fc808e4c40910c2af0af5fa60, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4033740769193333422, guid: 11283f9fc808e4c40910c2af0af5fa60, type: 3}
       propertyPath: m_Mass
       value: 0.1
