@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CutOrgan : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(UnityEngine.Collider other)
     {
         // Check if the collided object has the tag "Socket"
-        if (collision.gameObject.CompareTag("Socket"))
+        if (other.gameObject.CompareTag("Socket"))
         {
             // Find the Rigidbody of the child of the socket object
-            Rigidbody childRigidbody = collision.gameObject.GetComponentInChildren<Rigidbody>();
+            Rigidbody childRigidbody = other.gameObject.GetComponentInChildren<Rigidbody>();
 
             if (childRigidbody != null)
             {

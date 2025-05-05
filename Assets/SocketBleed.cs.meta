@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2efa6cef4608c4a40ad61267d958624e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - socketBleedOrgan: {instanceID: 0}
+  - socketBleedParticleSystem: {fileID: 3660004417000084598, guid: ab476071259752046849686a00b72ace, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
