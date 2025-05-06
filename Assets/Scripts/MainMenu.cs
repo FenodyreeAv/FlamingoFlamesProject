@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public float delayBeforeLoading = 6f;
    public void PlayGame()
     {
+        StartCoroutine(PlayVideoThenLoadScene());
+    }
+
+    private IEnumerator PlayVideoThenLoadScene()
+    {
+        yield return new WaitForSeconds(delayBeforeLoading);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
