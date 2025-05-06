@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 50726dd857f91be46b2e588909831ff4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fixedJoint: {instanceID: 0}
+  - targetRigidbody: {instanceID: 0}
+  - tipRigidbody: {instanceID: 0}
+  - thisCollider: {instanceID: 0}
+  - playerControls: {fileID: -944628639613478452, guid: a3b80aea618951c4f8529c4c7aa2e4ef, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

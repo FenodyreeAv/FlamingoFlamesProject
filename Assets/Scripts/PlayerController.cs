@@ -1,30 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] FixedJoint fixedJoint;
+    [Header("Component Refs")]
+    [SerializeField] private FixedJoint fixedJoint;
+    [SerializeField] private Rigidbody targetRigidbody; // Reference to the Target's Rigidbody
+    [SerializeField] private Rigidbody tipRigidbody; // Reference to the Tip's Rigidbody
+    [SerializeField] private Collider thisCollider;
+    [SerializeField] private List<Collider> overlappingColliders = new List<Collider>(); // List to track overlapping colliders
+    [SerializeField] private InputActionAsset playerControls;
 
+    [Header("Grabbed Object Joint Strength")]
     [SerializeField] float breakForce = 10.0f;
 
+    [Header("Targetted Object Highlighting")]
     [SerializeField] Color highlightColor = Color.yellow;
     [SerializeField] Color defaultColor = Color.white;
 
-    [SerializeField] Rigidbody targetRigidbody; // Reference to the Target's Rigidbody
-    [SerializeField] Rigidbody tipRigidbody; // Reference to the Tip's Rigidbody
+    [Header("Player Arm Move Speed")]
     [SerializeField] float forceAmount = 10.0f; // Force magnitude
 
-    [SerializeField] Collider thisCollider;
+    [Header("Input Actions")]
+    [SerializeField] private string playerNumber;
 
     private GameObject highlightedObject = null;
-    [SerializeField] private List<Collider> overlappingColliders = new List<Collider>(); // List to track overlapping colliders
+
+    private InputAction grabAction;
+    private InputAction moveAction;
+    private InputAction rotateAction;
+
+    private void Awake()
+    {
+        // Initialize Input Actions
+        Debug.Log("Player" + playerNumber + " controls initialized.");
+        Debug.Log("P" + playerNumber + " Grab");
+        Debug.Log("P" + playerNumber + " Grab");
+
+        grabAction = playerControls.FindActionMap("Player" + playerNumber).FindAction("P" + playerNumber + " Grab");
+        moveAction = playerControls.FindActionMap("Player" + playerNumber).FindAction("P" + playerNumber + " Move");
+        rotateAction = playerControls.FindActionMap("Player" + playerNumber).FindAction("P" + playerNumber + " Wrist");
+
+
+        // Enable Input Actions
+        grabAction.Enable();
+        moveAction.Enable();
+        rotateAction.Enable();
+    }
+
+    private void OnEnable()
+    {
+        // Enable Input Actions
+        grabAction.Enable();
+        moveAction.Enable();
+        rotateAction.Enable();
+    }
+    private void OnDisable()
+    {
+        // Disable Input Actions
+        grabAction.Disable();
+        moveAction.Disable();
+        rotateAction.Disable();
+    }
 
     void Update()
     {
         HighlightClosestObject();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Handle grab action
+        if (grabAction.triggered)
         {
             if (fixedJoint != null)
             {
@@ -36,39 +82,43 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Control Target's position using forces in global directions
+
         if (targetRigidbody != null && tipRigidbody != null)
         {
-            if (Input.GetKey(KeyCode.W))
+            Vector2 moveInput = moveAction.ReadValue<Vector2>();
+
+            if (moveInput.y > 0)
             {
                 targetRigidbody.AddForce(Vector3.forward * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.forward * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.S))
+            if (moveInput.y < 0)
             {
                 targetRigidbody.AddForce(Vector3.back * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.back * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.A))
+            if (moveInput.x < 0)
             {
                 targetRigidbody.AddForce(Vector3.left * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.left * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.D))
+            if (moveInput.x > 0)
             {
                 targetRigidbody.AddForce(Vector3.right * forceAmount, ForceMode.Force);
                 tipRigidbody.AddForce(Vector3.right * (forceAmount * 0.2f), ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.Q))
+
+            if (rotateAction.ReadValue<float>() > 0)
             {
                 tipRigidbody.AddForce(Vector3.up * forceAmount, ForceMode.Force);
             }
-            if (Input.GetKey(KeyCode.E))
+            if (rotateAction.ReadValue<float>() < 0)
             {
                 tipRigidbody.AddForce(Vector3.down * forceAmount, ForceMode.Force);
             }
         }
     }
+
 
     // Add collider to the list when it enters the trigger
     private void OnTriggerEnter(Collider other)
