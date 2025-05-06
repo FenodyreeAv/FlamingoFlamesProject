@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5182463216838569310}
   - component: {fileID: 4059341063180468759}
   - component: {fileID: 2753667653916512740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3096021697463065332}
   - component: {fileID: 4227341342516620623}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 792715277618886045}
   - component: {fileID: 2632876003791915719}
   - component: {fileID: 3839448343668979127}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4185982796462558995}
   - component: {fileID: 1944566648513529360}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +480,8 @@ GameObject:
   - component: {fileID: 2644345395929640381}
   - component: {fileID: 3676826175865371589}
   - component: {fileID: 5775470606094412139}
-  m_Layer: 0
+  - component: {fileID: 3643192436294126700}
+  m_Layer: 10
   m_Name: Lung AccordianR 1
   m_TagString: NewOrgan
   m_Icon: {fileID: 0}
@@ -811,3 +812,24 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &3643192436294126700
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7761229647079038280}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2670686, y: 3.072629, z: 1.2670667}
+  m_Center: {x: -0.00000017360603, y: 0.5236879, z: 0}

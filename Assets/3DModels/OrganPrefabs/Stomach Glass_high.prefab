@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 7393883236719052567}
   - component: {fileID: 7628726837725158213}
   - component: {fileID: 7139613729517232540}
-  m_Layer: 0
+  - component: {fileID: 7795831512627409923}
+  m_Layer: 10
   m_Name: Stomach Glass_high
   m_TagString: NewOrgan
   m_Icon: {fileID: 0}
@@ -176,6 +177,27 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.45
   m_Center: {x: -0.55, y: 0.31, z: 0.01}
+--- !u!65 &7795831512627409923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951390335898651655}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1488094, y: 1.6339846, z: 0.86659575}
+  m_Center: {x: -0.45737457, y: 0.06953827, z: -0.0000000059708327}
 --- !u!1 &8866530130009119113
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +211,7 @@ GameObject:
   - component: {fileID: 1526621643872773408}
   - component: {fileID: 2548533557653693529}
   - component: {fileID: 3133424579259514771}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: StomachGlass_high
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}

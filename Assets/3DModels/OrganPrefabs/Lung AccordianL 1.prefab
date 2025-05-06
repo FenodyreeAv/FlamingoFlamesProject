@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4438827212792673347}
   - component: {fileID: 8285265580040411771}
   - component: {fileID: 2287810164201395224}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4551544726355497768}
   - component: {fileID: 8737125937492152430}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,8 @@ GameObject:
   - component: {fileID: 3569307375610984771}
   - component: {fileID: 8468484681610788617}
   - component: {fileID: 678980648702675241}
-  m_Layer: 0
+  - component: {fileID: 4038699531933067358}
+  m_Layer: 10
   m_Name: Lung AccordianL 1
   m_TagString: NewOrgan
   m_Icon: {fileID: 0}
@@ -556,6 +557,27 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!65 &4038699531933067358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5949953632276787661}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7984451, y: 3.112629, z: 1.2670667}
+  m_Center: {x: -0.2656883, y: 0.5436881, z: 0}
 --- !u!1 &7390147715277340132
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6449760260001045354}
   - component: {fileID: 7891773205039054024}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,7 +642,7 @@ GameObject:
   - component: {fileID: 932862104233153081}
   - component: {fileID: 5150974588476221072}
   - component: {fileID: 9150020188354400270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}

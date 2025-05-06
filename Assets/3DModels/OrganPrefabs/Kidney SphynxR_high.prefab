@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5577015404034525366}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X0_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8195299162307231838}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z1_joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7971849943814658419}
   - component: {fileID: 2531483110962988192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360700297618975283}
   - component: {fileID: 3083467858810543566}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8874505058896679285}
   - component: {fileID: 4251896100418791696}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7854063655500487480}
   - component: {fileID: 1064879016420905603}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8945936689354878607}
   - component: {fileID: 4780515906040195722}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -723,8 +723,8 @@ GameObject:
   - component: {fileID: 5644338773694284837}
   - component: {fileID: 275828486894451676}
   - component: {fileID: 1323384601934662171}
-  - component: {fileID: 6302164120265207235}
-  m_Layer: 0
+  - component: {fileID: -1573779946909011277}
+  m_Layer: 10
   m_Name: Kidney SphynxR_high
   m_TagString: NewOrgan
   m_Icon: {fileID: 0}
@@ -741,8 +741,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -0.198, y: 2.659, z: -3.989}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8874505058896679285}
   - {fileID: 7971849943814658419}
@@ -844,7 +844,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6302164120265207235
+--- !u!65 &-1573779946909011277
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -859,12 +859,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.71193695, y: 1.1500187, z: 0.37068608}
-  m_Center: {x: 0.10902208, y: 0.084762305, z: 0}
+  m_Size: {x: 0.71193695, y: 1.1500189, z: 0.37068617}
+  m_Center: {x: 0.10902208, y: 0.08476233, z: 0}
 --- !u!1 &5128859227944487118
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5844824056316095234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3278728016847656747}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z0_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5346356045633934333}
   - component: {fileID: 7971606437250965537}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9146382150375881024}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1097,7 +1097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6428927581000876121}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X1_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

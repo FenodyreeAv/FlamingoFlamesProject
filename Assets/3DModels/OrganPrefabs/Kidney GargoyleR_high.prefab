@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2840061366503448862}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X1_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4030725163260822819}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z0_joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4815672754624649494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z1_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 53961051726403591}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1630063384537340695}
   - component: {fileID: 5138445167396040101}
   - component: {fileID: 7455999136562764251}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3408437471528847941}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y1_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,9 +346,9 @@ GameObject:
   - component: {fileID: 3460303163926013282}
   - component: {fileID: 9043861221991619227}
   - component: {fileID: 6716689874287328358}
-  - component: {fileID: 4326424970980303416}
   - component: {fileID: 1030296969300516508}
-  m_Layer: 0
+  - component: {fileID: 9037358520398067014}
+  m_Layer: 10
   m_Name: Kidney GargoyleR_high
   m_TagString: NewOrgan
   m_Icon: {fileID: 0}
@@ -365,8 +365,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -0.1931, y: 2.6256, z: -3.9854}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 394447621903282226}
   - {fileID: 1220611944981018676}
@@ -469,27 +469,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4326424970980303416
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273537575975141336}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.7, y: 1.2, z: 0.6911174}
-  m_Center: {x: 0.019337967, y: 0.10160065, z: 1.452532e-17}
 --- !u!114 &1030296969300516508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,6 +486,27 @@ MonoBehaviour:
   minDistance: 0
   maxDistance: 0
   configureConnectedAnchor: 1
+--- !u!65 &9037358520398067014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273537575975141336}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7733927, y: 1.7733927, z: 0.69111884}
+  m_Center: {x: 0.019337803, y: 0.10160008, z: 0.00000009942238}
 --- !u!1 &4757731805232267559
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 4466943346041232168}
   - component: {fileID: 1513960890168203470}
   - component: {fileID: 794066110206292483}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -699,7 +699,7 @@ GameObject:
   - component: {fileID: 240247172379001945}
   - component: {fileID: 4240480946748632975}
   - component: {fileID: 2625124015216753333}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Z1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 1963203396535382682}
   - component: {fileID: 8902937252513316775}
   - component: {fileID: 8224354652677697972}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -1059,7 +1059,7 @@ GameObject:
   - component: {fileID: 5147546670643816505}
   - component: {fileID: 7960663775062222633}
   - component: {fileID: 6547007916873440573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Y0
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 8867514860844839517}
   - component: {fileID: 274017315653243768}
   - component: {fileID: 7514448086755359011}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X1
   m_TagString: GrabbableObject
   m_Icon: {fileID: 0}
@@ -1416,7 +1416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3689651679854553585}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: X0_joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
