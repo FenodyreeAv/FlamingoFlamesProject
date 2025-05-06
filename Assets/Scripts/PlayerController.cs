@@ -52,14 +52,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        // Enable Input Actions
         grabAction.Enable();
         moveAction.Enable();
         rotateAction.Enable();
     }
     private void OnDisable()
     {
-        // Disable Input Actions
         grabAction.Disable();
         moveAction.Disable();
         rotateAction.Disable();
@@ -69,7 +67,6 @@ public class PlayerController : MonoBehaviour
     {
         HighlightClosestObject();
 
-        // Handle grab action
         if (grabAction.triggered)
         {
             if (fixedJoint != null)
@@ -223,6 +220,14 @@ public class PlayerController : MonoBehaviour
             fixedJoint = highlightedObject.AddComponent<FixedJoint>();
             fixedJoint.connectedBody = this.GetComponent<Rigidbody>();
             fixedJoint.breakForce = breakForce;
+
+            AudioSource audioSource = highlightedObject.GetComponent<AudioSource>();
+            if (audioSource != null)
+            {
+                audioSource.pitch = Random.Range(0.9f, 1.1f); // Slight pitch variation
+                audioSource.volume = Random.Range(0.8f, 1.0f); // Slight volume variation
+                audioSource.Play();
+            }
         }
         else
         {

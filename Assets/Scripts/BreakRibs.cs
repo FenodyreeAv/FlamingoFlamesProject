@@ -21,6 +21,14 @@ public class BreakRibs : MonoBehaviour
             {
                 ribRigidbody.isKinematic = false;
             }
+
+            AudioSource audioSource = collision.gameObject.GetComponent<AudioSource>();
+            if (audioSource != null)
+            {
+                audioSource.pitch = Random.Range(0.8f, 1.2f); // Slight pitch variation
+                audioSource.volume = Random.Range(0.7f, 1.0f); // Slight volume variation
+                audioSource.Play();
+            }
         }
     }
 }
