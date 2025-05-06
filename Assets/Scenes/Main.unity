@@ -3512,7 +3512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2216939513052813012, guid: ab476071259752046849686a00b72ace, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7903
+      value: 0.9916
       objectReference: {fileID: 0}
     - target: {fileID: 2216939513052813012, guid: ab476071259752046849686a00b72ace, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3548,11 +3548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2427689819341506147, guid: ab476071259752046849686a00b72ace, type: 3}
       propertyPath: CollisionModule.enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2427689819341506147, guid: ab476071259752046849686a00b72ace, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 64
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3660004417000084598, guid: ab476071259752046849686a00b72ace, type: 3}
       propertyPath: m_Name
