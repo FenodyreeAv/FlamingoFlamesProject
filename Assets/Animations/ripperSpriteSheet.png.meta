@@ -1,0 +1,2094 @@
+fileFormatVersion: 2
+guid: 7a1020cf772063042ba38f5684bcdcd8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ripperSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c77366374bd444cb34921ae53105f4
+      internalID: -1765582917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7743bde307703e849863d91886e2be46
+      internalID: -630150570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11dc00e943b96f246893372ecd74d674
+      internalID: -180862869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a18b87366f13e41969f4f435daa1a5
+      internalID: 1860427673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e418835c379cbc49847b4b15fbf5247
+      internalID: -1954885153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32d919a846401240accdc9d13a2ddb6
+      internalID: -1574645515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64067c91fb0c173479615f667bdd797e
+      internalID: 1525759189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af5dc5e96a1cfb4ea85f39d860fc5bb
+      internalID: 620394608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 13707
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2757a113ede26394d85c735436e6e5ed
+      internalID: -1059348202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50de4d9295bc620448708a9e68da48e9
+      internalID: -899994742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c91a8836f218c49aa4b94e25d86594
+      internalID: 1418920243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622d146f2cb7acc468009fbb3bd08ea8
+      internalID: 705791681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1c6ebe1e30e4641922c96ce1a22cb7
+      internalID: 1589962609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595bfefb680934343b5eae223a26a62c
+      internalID: 420795419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99b754e15b537b429d468c57693b186
+      internalID: -1569994794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ddbe755f0522741baa01c033504461
+      internalID: 856072191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065dcfacca71ad14a8891648e7e96d42
+      internalID: -1735287264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 12184
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44f7a1be0fd97849b69b0f0d0984544
+      internalID: 1701893932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1f1fcbd63f3c147ae3a367f747eaa4
+      internalID: -1861715204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517ff6331449bb04ca5fafd228ac8caa
+      internalID: 922883982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8b69363599dc0488edae381b46c434
+      internalID: 1104806604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc47c9077aec754388e2eef1076af51
+      internalID: -1070523326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b8102b9cca2a849b3a2932ad3674c9
+      internalID: -2083908993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8318c59f9b022409f807e023c227d4
+      internalID: 518522287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f553b675decaa634991a90ff6caf016f
+      internalID: -2052481419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb8231ed023f1145993ecf28b3a47da
+      internalID: -98092808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 10661
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338e6ee7774ba414bb530160997b4c09
+      internalID: -715877242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e12f6f3325ea52409898db042aa8576
+      internalID: 997458314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7ceb5ff4f184340b176707de116638
+      internalID: 385957445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4ee2fe1b9b28947807ffea9fe85147
+      internalID: -524724331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713b01835b2f1954ca6670a32b2e7ad0
+      internalID: -252521584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9723ccf4c4cad924b860d47360527d3c
+      internalID: -94268096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e563f927e18064347842a6627a33a0cd
+      internalID: 1316757076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786dd9005a476d04ab508f3f334f76de
+      internalID: 546153375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49408f3d980af7c45a5d6ce8e149a1c2
+      internalID: -2105048830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 9138
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80376c706f7673f48b97a1d1efd38c2b
+      internalID: 455936856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b09c1f25ff01a240886fd0840017d36
+      internalID: -373523094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effe0c89db4eaaa40a6ccdb8fcf0a764
+      internalID: -1704365828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1e6ed686bffab4fb5a37e823dfae03
+      internalID: 16661123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2db0b2afdb0f14fa89d417024aa800
+      internalID: 915129239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2303f58618e4448aa874f07776d1a1
+      internalID: -1945336884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22f1c94953512e4e811bea3ef068520
+      internalID: -1043783218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462f9e6214027324cac922ce86ca2e2f
+      internalID: -683551311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b562c0c9cf92b064383b34a5803fe08f
+      internalID: -2047688004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 7615
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46ecaa025e789946b8449ac61954740
+      internalID: 812113260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7fadadd75ff9f4386d91f7d52c1809
+      internalID: 457868178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e9d584ab9e7bb4e89c73811c2138ef
+      internalID: -1018488218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834d8000f98dc864a9f0602ba0b3129b
+      internalID: 789567495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483304841f28b5e4b91bf0a845fbc0b3
+      internalID: 2138602630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e25f024faaa0624a8ba06672ac17b7d
+      internalID: 1093464878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001fee361800c5746bef8c73f9898660
+      internalID: -373183392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4655faca78fc3d74b9334328ea442cd5
+      internalID: -683890478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb1ee842692fec478c629ae665976ea
+      internalID: -1029911155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 6092
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca4fcbced271b348862950644e1992f
+      internalID: -1871799122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d37531c0e4fa34aa7a250b759feb63
+      internalID: -1933566396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c938b60eab19e744b41cecb980e8836
+      internalID: -21368828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f0f4e5232d6d44482a4406462790e4
+      internalID: -1796616284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661fb34c097daa4419ae44f742ec76a7
+      internalID: -1531047057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3777aab683aef4a4db114f7ab89aa001
+      internalID: 393407117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7497768e54beb7846a173f4ebdaa9ed9
+      internalID: 477537851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506d490528edf674299210e515881b83
+      internalID: 1438789664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfb132448f44134e82048c9aa9c8e2a
+      internalID: 1371405711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 4569
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1a1af9cfbfec54c97048002e25c636
+      internalID: -1498718542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299fabcb369a3584092cf829712431e5
+      internalID: -1450931274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa5e7d75e9fe1340891e7ac9bf077a6
+      internalID: -1742083222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0167b2144806347842549850a3bb19
+      internalID: -835138083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc86e1025d7b864cb26a79e0917f65d
+      internalID: -885703623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26cb7847ad4fc24794ae72fe16e07e3
+      internalID: -1188831635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847e4f52bb6e8f14b89c84433722a4be
+      internalID: -1923296065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606324cd8ccc98c4d894949fff20f7ac
+      internalID: 1977192472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b666ac45cbfb1e645a19691db746ce72
+      internalID: 739197073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 3046
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf54d3c1cf3c164468c47e9a6ceb51e6
+      internalID: -1788905032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18cdfd432956734c9f7715d85cc2c0a
+      internalID: -1018980735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6614115e3932f644c8e75892b044001c
+      internalID: -48088550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d458979b244e4438983f168392196a
+      internalID: 541647969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9b581601a97134ba11e274bdf1cfae
+      internalID: 1225319407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7443487aaf6e04e47b07c230352c47da
+      internalID: 1331018177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0663cca9ea6e94485f0859b98eb9d7
+      internalID: 394078049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15aca95d5c028e14da3eadd878bf976a
+      internalID: 1680611798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667fae557f5a26242bad4a8bb5147ca4
+      internalID: -81964528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 1523
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41812cacd9e4d804381fefe81de1aabb
+      internalID: 1141245151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b902130429df94e4b88c588c970bdb80
+      internalID: -1985446525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72d0393ff075094ab108f2341d317ab
+      internalID: 1797384355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504aef39c12ba274583f85927a8fe9b8
+      internalID: 1400778155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde724e06949276468899937eee0286a
+      internalID: 1325386319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3381e1f0f4f2ab6439b0b2fa26be48c0
+      internalID: 719626253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 8095
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13151de595a9a0547b4603a95b91c2b2
+      internalID: 1495598514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 9714
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9151af28a71a81e4584c7eab68a15993
+      internalID: -1242452296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 11333
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de23fdca4b1cf348b76768656a83ec1
+      internalID: 704527983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ripperSpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 12952
+        y: 0
+        width: 1619
+        height: 1523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f543a248011bbe48bf85be6bc158af0
+      internalID: 1328256984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: faeb4453dbc58874286494b99b7e8ff5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ripperSpriteSheet_0: -1765582917
+      ripperSpriteSheet_1: -630150570
+      ripperSpriteSheet_10: 1418920243
+      ripperSpriteSheet_11: 705791681
+      ripperSpriteSheet_12: 1589962609
+      ripperSpriteSheet_13: 420795419
+      ripperSpriteSheet_14: -1569994794
+      ripperSpriteSheet_15: 856072191
+      ripperSpriteSheet_16: -1735287264
+      ripperSpriteSheet_17: 1701893932
+      ripperSpriteSheet_18: -1861715204
+      ripperSpriteSheet_19: 922883982
+      ripperSpriteSheet_2: -180862869
+      ripperSpriteSheet_20: 1104806604
+      ripperSpriteSheet_21: -1070523326
+      ripperSpriteSheet_22: -2083908993
+      ripperSpriteSheet_23: 518522287
+      ripperSpriteSheet_24: -2052481419
+      ripperSpriteSheet_25: -98092808
+      ripperSpriteSheet_26: -715877242
+      ripperSpriteSheet_27: 997458314
+      ripperSpriteSheet_28: 385957445
+      ripperSpriteSheet_29: -524724331
+      ripperSpriteSheet_3: 1860427673
+      ripperSpriteSheet_30: -252521584
+      ripperSpriteSheet_31: -94268096
+      ripperSpriteSheet_32: 1316757076
+      ripperSpriteSheet_33: 546153375
+      ripperSpriteSheet_34: -2105048830
+      ripperSpriteSheet_35: 455936856
+      ripperSpriteSheet_36: -373523094
+      ripperSpriteSheet_37: -1704365828
+      ripperSpriteSheet_38: 16661123
+      ripperSpriteSheet_39: 915129239
+      ripperSpriteSheet_4: -1954885153
+      ripperSpriteSheet_40: -1945336884
+      ripperSpriteSheet_41: -1043783218
+      ripperSpriteSheet_42: -683551311
+      ripperSpriteSheet_43: -2047688004
+      ripperSpriteSheet_44: 812113260
+      ripperSpriteSheet_45: 457868178
+      ripperSpriteSheet_46: -1018488218
+      ripperSpriteSheet_47: 789567495
+      ripperSpriteSheet_48: 2138602630
+      ripperSpriteSheet_49: 1093464878
+      ripperSpriteSheet_5: -1574645515
+      ripperSpriteSheet_50: -373183392
+      ripperSpriteSheet_51: -683890478
+      ripperSpriteSheet_52: -1029911155
+      ripperSpriteSheet_53: -1871799122
+      ripperSpriteSheet_54: -1933566396
+      ripperSpriteSheet_55: -21368828
+      ripperSpriteSheet_56: -1796616284
+      ripperSpriteSheet_57: -1531047057
+      ripperSpriteSheet_58: 393407117
+      ripperSpriteSheet_59: 477537851
+      ripperSpriteSheet_6: 1525759189
+      ripperSpriteSheet_60: 1438789664
+      ripperSpriteSheet_61: 1371405711
+      ripperSpriteSheet_62: -1498718542
+      ripperSpriteSheet_63: -1450931274
+      ripperSpriteSheet_64: -1742083222
+      ripperSpriteSheet_65: -835138083
+      ripperSpriteSheet_66: -885703623
+      ripperSpriteSheet_67: -1188831635
+      ripperSpriteSheet_68: -1923296065
+      ripperSpriteSheet_69: 1977192472
+      ripperSpriteSheet_7: 620394608
+      ripperSpriteSheet_70: 739197073
+      ripperSpriteSheet_71: -1788905032
+      ripperSpriteSheet_72: -1018980735
+      ripperSpriteSheet_73: -48088550
+      ripperSpriteSheet_74: 541647969
+      ripperSpriteSheet_75: 1225319407
+      ripperSpriteSheet_76: 1331018177
+      ripperSpriteSheet_77: 394078049
+      ripperSpriteSheet_78: 1680611798
+      ripperSpriteSheet_79: -81964528
+      ripperSpriteSheet_8: -1059348202
+      ripperSpriteSheet_80: 1141245151
+      ripperSpriteSheet_81: -1985446525
+      ripperSpriteSheet_82: 1797384355
+      ripperSpriteSheet_83: 1400778155
+      ripperSpriteSheet_84: 1325386319
+      ripperSpriteSheet_85: 719626253
+      ripperSpriteSheet_86: 1495598514
+      ripperSpriteSheet_87: -1242452296
+      ripperSpriteSheet_88: 704527983
+      ripperSpriteSheet_89: 1328256984
+      ripperSpriteSheet_9: -899994742
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
