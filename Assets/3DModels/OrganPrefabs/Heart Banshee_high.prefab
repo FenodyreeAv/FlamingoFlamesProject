@@ -530,8 +530,8 @@ GameObject:
   - component: {fileID: 8792985883379736972}
   - component: {fileID: 5434241310708899887}
   m_Layer: 0
-  m_Name: HeartBanshee_high
-  m_TagString: Organ
+  m_Name: Heart Banshee_high
+  m_TagString: NewOrgan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

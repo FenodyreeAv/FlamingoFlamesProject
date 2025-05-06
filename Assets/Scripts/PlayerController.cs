@@ -143,42 +143,31 @@ public class PlayerController : MonoBehaviour
     void HighlightClosestObject()
     {
         GameObject closestObject = null;
-
-        // Find the closest overlapping collider with the "GrabbableObject" tag
         foreach (Collider collider in overlappingColliders)
         {
-            if (collider.CompareTag("GrabbableObject"))
+            if (collider.CompareTag("GrabbableObject") || collider.CompareTag("NewOrgan"))
             {
                 closestObject = collider.gameObject;
-                break; // Stop at the first overlapping grabbable object
+                break;
             }
         }
-
-        // Check if there is an overlapping grabbable object
         if (closestObject != null)
         {
             if (highlightedObject != closestObject)
             {
-                // Remove highlight from the previously highlighted object
                 if (highlightedObject != null)
                 {
                     SetObjectColor(highlightedObject, defaultColor);
-
-                    // Reset the parent's color if it has the "Organ" tag
                     Transform parent = highlightedObject.transform.parent;
-                    if (parent != null && parent.CompareTag("Organ"))
+                    if (parent != null && (parent.CompareTag("Organ") || parent.CompareTag("NewOrgan")))
                     {
                         SetObjectColor(parent.gameObject, defaultColor);
                     }
                 }
-
-                // Highlight the new closest object
                 highlightedObject = closestObject;
                 SetObjectColor(highlightedObject, highlightColor);
-
-                // Check if the parent has the "Organ" tag and change its color
                 Transform newParent = highlightedObject.transform.parent;
-                if (newParent != null && newParent.CompareTag("Organ"))
+                if (newParent != null && (newParent.CompareTag("Organ") || newParent.CompareTag("NewOrgan")))
                 {
                     SetObjectColor(newParent.gameObject, highlightColor);
                 }
@@ -186,14 +175,11 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // Remove highlight if no object is overlapping
             if (highlightedObject != null)
             {
                 SetObjectColor(highlightedObject, defaultColor);
-
-                // Reset the parent's color if it has the "Organ" tag
                 Transform parent = highlightedObject.transform.parent;
-                if (parent != null && parent.CompareTag("Organ"))
+                if (parent != null && (parent.CompareTag("Organ") || parent.CompareTag("NewOrgan")))
                 {
                     SetObjectColor(parent.gameObject, defaultColor);
                 }
@@ -202,6 +188,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
 
 
     void SetObjectColor(GameObject obj, Color color)

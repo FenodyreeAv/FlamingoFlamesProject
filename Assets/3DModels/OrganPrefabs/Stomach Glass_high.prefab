@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 7628726837725158213}
   - component: {fileID: 7139613729517232540}
   m_Layer: 0
-  m_Name: StomachGlass_high
-  m_TagString: Organ
+  m_Name: Stomach Glass_high
+  m_TagString: NewOrgan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

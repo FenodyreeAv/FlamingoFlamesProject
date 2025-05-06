@@ -10,6 +10,7 @@ TagManager:
   - Spawner
   - Rib
   - Socket
+  - NewOrgan
   layers:
   - Default
   - TransparentFX

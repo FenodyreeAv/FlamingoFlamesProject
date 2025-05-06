@@ -8,22 +8,41 @@ public class SocketBleed : MonoBehaviour
     [SerializeField] private GameObject socketBleedParticleSystem;
     private bool isBleeding = false;
     private Coroutine bleedCoroutine;
+    private List<GameObject> instantiatedBleeds = new List<GameObject>();
+    private Coroutine organContactCoroutine;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isBleeding)
+        if (other.CompareTag("NewOrgan"))
         {
-            Debug.Log("Bleeding started");
-            isBleeding = true;
-            bleedCoroutine = StartCoroutine(SpawnBleedParticles());
+            if (organContactCoroutine == null)
+            {
+                organContactCoroutine = StartCoroutine(HandleOrganContact(other));
+            }
         }
-        Quaternion randomRotation = Random.rotation;
-        Instantiate(socketBleedParticleSystem, transform.position, randomRotation);
+        else
+        {
+            if (!isBleeding)
+            {
+                Debug.Log("Bleeding started");
+                isBleeding = true;
+                bleedCoroutine = StartCoroutine(SpawnBleedParticles());
+            }
+            Quaternion randomRotation = Random.rotation;
+            GameObject particleInstance = Instantiate(socketBleedParticleSystem, transform.position, randomRotation);
+            particleInstance.transform.SetParent(transform.parent.parent, true);
+            instantiatedBleeds.Add(particleInstance);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Stop bleeding when the object exits the trigger
+        if (other.CompareTag("NewOrgan") && organContactCoroutine != null)
+        {
+            StopCoroutine(organContactCoroutine);
+            organContactCoroutine = null;
+        }
+
         if (isBleeding && other.CompareTag("Tool"))
         {
             isBleeding = false;
@@ -31,19 +50,35 @@ public class SocketBleed : MonoBehaviour
         }
     }
 
+    private IEnumerator HandleOrganContact(Collider organ)
+    {
+        yield return new WaitForSeconds(1f);
+
+        if (organ != null && organ.CompareTag("NewOrgan"))
+        {
+            Debug.Log("Deleting instantiated bleeds due to NewOrgan contact");
+            foreach (var bleed in instantiatedBleeds)
+            {
+                if (bleed != null)
+                {
+                    Destroy(bleed);
+                }
+            }
+            instantiatedBleeds.Clear();
+            Rigidbody organRigidbody = organ.GetComponent<Rigidbody>();
+            if (organRigidbody != null)
+            {
+                organRigidbody.isKinematic = true;
+                Debug.Log("Organ's Rigidbody is now kinematic");
+            }
+        }
+    }
+
     private IEnumerator SpawnBleedParticles()
     {
         while (isBleeding)
         {
-            // Generate a random rotation
-            
-
-            // Spawn the particle system at the current position with the random rotation
-            
-
-            // Wait for 1 second before spawning the next particle system
             yield return new WaitForSeconds(1f);
         }
     }
-
 }
