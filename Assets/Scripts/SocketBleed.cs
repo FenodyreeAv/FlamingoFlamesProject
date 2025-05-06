@@ -11,7 +11,6 @@ public class SocketBleed : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Start bleeding only if the object's name is "Scalpel" or "Saw"
         if (!isBleeding)
         {
             Debug.Log("Bleeding started");
