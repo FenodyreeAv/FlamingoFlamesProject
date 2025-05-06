@@ -819,8 +819,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.3
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: -0.3}
 --- !u!138 &41544471
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -845,7 +845,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41544468}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.9
   m_Drag: 5
   m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3208,6 +3208,10 @@ PrefabInstance:
       propertyPath: m_Drag
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 744503879517488569, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1264081749522340482, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
       propertyPath: m_Name
       value: DrawerBase Prefab (1)
@@ -3288,9 +3292,17 @@ PrefabInstance:
       propertyPath: m_Drag
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 6475888966304022058, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7055150199057086080, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
       propertyPath: m_Drag
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055150199057086080, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7229264385543963312, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
       propertyPath: m_Enabled
@@ -5236,6 +5248,10 @@ PrefabInstance:
       propertyPath: m_Drag
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 744503879517488569, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1264081749522340482, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
       propertyPath: m_Name
       value: DrawerBase Prefab
@@ -5308,9 +5324,17 @@ PrefabInstance:
       propertyPath: m_Drag
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 6475888966304022058, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7055150199057086080, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
       propertyPath: m_Drag
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055150199057086080, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7229264385543963312, guid: 61f47f3c240ab834c82f67e065c70a7e, type: 3}
       propertyPath: m_Enabled
@@ -8381,7 +8405,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766840381}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10825,8 +10849,8 @@ MonoBehaviour:
   monLivers:
   - {fileID: 6951390335898651655, guid: 782e71bf8a6b77341a07b1ad72e776f7, type: 3}
   monLungs:
-  - {fileID: 3861993675603809642, guid: b70e3cbaa9bb3db4298e7f975e0057f3, type: 3}
-  - {fileID: 5233224213538349445, guid: 6365a58030c79a44a966af66ec02d746, type: 3}
+  - {fileID: 5949953632276787661, guid: d345e2e6113bc8b4883bf7b8011968a8, type: 3}
+  - {fileID: 7761229647079038280, guid: 8ef1731ba44df4a4d94c3b588502d45e, type: 3}
   monHearts:
   - {fileID: 3591250987825916573, guid: 9c67356fdc193d6418d9a374a5a97db3, type: 3}
   scalpels:
@@ -11012,7 +11036,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010609653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13278,8 +13302,8 @@ Transform:
   m_GameObject: {fileID: 1233666914}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.012800008, y: 0.5061669, z: -5.2407694}
-  m_LocalScale: {x: 2.185614, y: 0.8833657, z: 1.4398524}
+  m_LocalPosition: {x: 0.2782, y: 0.5061669, z: -5.4586}
+  m_LocalScale: {x: 2.767643, y: 0.8833657, z: 1.004297}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -14118,8 +14142,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.3
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: -0.3}
 --- !u!138 &1357066528
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -14144,7 +14168,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357066525}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.9
   m_Drag: 5
   m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}

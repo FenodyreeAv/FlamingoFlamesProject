@@ -17,6 +17,8 @@ public class SocketBleed : MonoBehaviour
             isBleeding = true;
             bleedCoroutine = StartCoroutine(SpawnBleedParticles());
         }
+        Quaternion randomRotation = Random.rotation;
+        Instantiate(socketBleedParticleSystem, transform.position, randomRotation);
     }
 
     private void OnTriggerExit(Collider other)
@@ -34,10 +36,10 @@ public class SocketBleed : MonoBehaviour
         while (isBleeding)
         {
             // Generate a random rotation
-            Quaternion randomRotation = Random.rotation;
+            
 
             // Spawn the particle system at the current position with the random rotation
-            Instantiate(socketBleedParticleSystem, transform.position, randomRotation);
+            
 
             // Wait for 1 second before spawning the next particle system
             yield return new WaitForSeconds(1f);

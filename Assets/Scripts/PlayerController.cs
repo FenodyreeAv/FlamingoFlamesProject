@@ -35,9 +35,9 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         // Initialize Input Actions
-        Debug.Log("Player" + playerNumber + " controls initialized.");
-        Debug.Log("P" + playerNumber + " Grab");
-        Debug.Log("P" + playerNumber + " Grab");
+        //Debug.Log("Player" + playerNumber + " controls initialized.");
+        //Debug.Log("P" + playerNumber + " Grab");
+        //Debug.Log("P" + playerNumber + " Grab");
 
         grabAction = playerControls.FindActionMap("Player" + playerNumber).FindAction("P" + playerNumber + " Grab");
         moveAction = playerControls.FindActionMap("Player" + playerNumber).FindAction("P" + playerNumber + " Move");
