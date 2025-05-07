@@ -1,19 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+ // Ryan
 public class SpawnRandomObj : MonoBehaviour
 {
-    [SerializeField] int heartsToSpawn = 1;
-    [SerializeField] int liversToSpawn = 1;
-    [SerializeField] int lungsToSpawn = 1;
-    [SerializeField] int kidneysToSpawn = 1;
+    [Header("Total Number of Objects Spawned")]
+    [SerializeField] private int heartsToSpawn = 1;
+    [SerializeField] private int liversToSpawn = 1;
+    [SerializeField] private int lungsToSpawn = 1;
+    [SerializeField] private int kidneysToSpawn = 1;
 
-    [SerializeField] int scalpelsToSpawn = 1;
-    [SerializeField] int hammersToSpawn = 1;
-    [SerializeField] int sawsToSpawn = 1;
+    [SerializeField] private int scalpelsToSpawn = 1;
+    [SerializeField] private int hammersToSpawn = 1;
+    [SerializeField] private int sawsToSpawn = 1;
 
     private List<GameObject> availableSpawners;
 
+    [Header("Set These to Object Prefabs")]
     public GameObject[] monKidneys;
     public GameObject[] monLivers;
     public GameObject[] monLungs;
@@ -61,8 +64,7 @@ public class SpawnRandomObj : MonoBehaviour
             GameObject spawner = availableSpawners[randomSpawnerIndex];
             Instantiate(objectsToSpawn[randomObjectIndex], randomizePosition(spawner.transform.position), randomizeRotation(spawner.transform.rotation));
 
-
-            availableSpawners.RemoveAt(randomSpawnerIndex);
+            availableSpawners.RemoveAt(randomSpawnerIndex); //Remove spawner to avoid reusing it
         }
     }
 

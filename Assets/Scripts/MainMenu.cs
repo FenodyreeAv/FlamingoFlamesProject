@@ -4,15 +4,18 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
+//Ryan & Ross
 public class MainMenu : MonoBehaviour
 {
-    public float delayBeforeLoading = 6f;
-    public float delaySquish = 1;
-    public float delayCrunch = 2;
+    [SerializeField] private float delayBeforeLoading = 6f; //Animation duration
+    [SerializeField] private float delaySquish = 1; //Delay before squish sound
+    [SerializeField] private float delayCrunch = 2; //Delay before crunch sound
 
-    public AudioClip squishSound;
-    public AudioClip crunchSound; 
+    [Header("Assign audio clips to these")]
+    [SerializeField] private AudioClip squishSound;
+    [SerializeField] private AudioClip crunchSound; 
     private AudioSource audioSource;
+
     private void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();

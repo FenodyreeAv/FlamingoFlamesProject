@@ -1,3 +1,9 @@
+//Original programatic IK solver
+//Didn't work well with 2D assets and frequently did silly things to other physics object
+
+
+
+
 //using System.Collections;
 //using System.Collections.Generic;
 //using UnityEditor;

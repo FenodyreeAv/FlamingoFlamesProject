@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class SocketBleed : MonoBehaviour
 {
+
+    [Header("Assign the Original Organ to this")]
     [SerializeField] public GameObject socketBleedOrgan;
+
+    [Header("Assign the Particle System prefab to this")]
     [SerializeField] private GameObject socketBleedParticleSystem;
+
     private bool isBleeding = false;
     private Coroutine bleedCoroutine;
     private List<GameObject> instantiatedBleeds = new List<GameObject>();
@@ -15,26 +20,29 @@ public class SocketBleed : MonoBehaviour
     {
         if (other.CompareTag("NewOrgan"))
         {
+            Debug.Log("NewOrgan entered the trigger");
             if (organContactCoroutine == null)
             {
-                organContactCoroutine = StartCoroutine(HandleOrganContact(other));
+                organContactCoroutine = StartCoroutine(HandleOrganContact(other)); //If a new organ stays for 1 second, make it kinematic & stop bleed
             }
         }
         if (other.CompareTag("GrabbableObject"))
         {
-
-            if (other.name == "Saw" || other.name == "Scalpel" || other.name == "Hammer")
+            Debug.Log("GrabbableObject entered the trigger");
+            if (other.name == "Saw(Clone)" || other.name == "Scalpel(Clone)" || other.name == "Hammer(Clone)")
             {
+                Debug.Log("GrabbableObject is a tool");
                 if (!isBleeding)
                 {
                     Debug.Log("Bleeding started");
                     isBleeding = true;
                     bleedCoroutine = StartCoroutine(SpawnBleedParticles());
                 }
-                Quaternion randomRotation = Random.rotation;
+
+                Quaternion randomRotation = Random.rotation; //Spray blood in a random direction
                 GameObject particleInstance = Instantiate(socketBleedParticleSystem, transform.position, randomRotation);
                 particleInstance.transform.SetParent(transform.parent.parent, true);
-                instantiatedBleeds.Add(particleInstance);
+                instantiatedBleeds.Add(particleInstance); //Keep track so we can delete it later
             }
             else if (other.transform.parent != null && other.transform.parent.CompareTag("NewOrgan"))
             {
@@ -43,7 +51,6 @@ public class SocketBleed : MonoBehaviour
             }
         }
     }
-
 
     private void OnTriggerExit(Collider other)
     {

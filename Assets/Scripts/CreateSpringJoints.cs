@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CreateSpringJoints : MonoBehaviour
 {
-    public float spring = 50.0f;
-    public float damper = 5.0f;
-    public float minDistance = 0.0f;
-    public float maxDistance = 0.0f;
-    public bool configureConnectedAnchor = false;
+    [Header("Spring Joint Settings")]
+    [SerializeField] private float spring = 50.0f;
+    [SerializeField] private float damper = 5.0f;
+    [SerializeField] private float minDistance = 0.0f;
+    [SerializeField] private float maxDistance = 0.0f;
+    [SerializeField] private bool configureConnectedAnchor = true;
 
-    SpringJoint[] springJoints;
+    private SpringJoint[] springJoints;
 
-    // Start is called before the first frame update
     void Start()
     {
         CreateJoints();
@@ -20,7 +20,7 @@ public class CreateSpringJoints : MonoBehaviour
         springJoints = GetComponentsInChildren<SpringJoint>();
     }
 
-    void IgnoreChildCollisions()
+    void IgnoreChildCollisions() //Stops the organs exploding when their internal colliders overlap
     {
         Collider[] childColliders = GetComponentsInChildren<Collider>(true);
 
@@ -46,8 +46,7 @@ public class CreateSpringJoints : MonoBehaviour
             }
         }
 
-        // Attach children to each other
-        foreach (Transform child in childTransforms)
+        foreach (Transform child in childTransforms) // Attach children to each other
         {
             foreach (Transform target in childTransforms)
             {
@@ -64,7 +63,7 @@ public class CreateSpringJoints : MonoBehaviour
             }
         }
 
-        foreach (Transform child in childTransforms)
+        foreach (Transform child in childTransforms) //Attach the parent to the child
         {
             SpringJoint parentSpringJoint = this.gameObject.AddComponent<SpringJoint>();
             parentSpringJoint.connectedBody = child.GetComponent<Rigidbody>();
@@ -81,9 +80,8 @@ public class CreateSpringJoints : MonoBehaviour
     {
         if (Debug.isDebugBuild) //Only run this in debug builds
         {
-            foreach (SpringJoint springJoint in springJoints)
+            foreach (SpringJoint springJoint in springJoints) //For debugging the organ jiggle
             {
-                // Update the spring properties in real time
                 springJoint.spring = spring;
                 springJoint.damper = damper;
                 springJoint.minDistance = minDistance;

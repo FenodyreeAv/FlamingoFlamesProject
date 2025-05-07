@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Ryan
 public class CutOrgan : MonoBehaviour
 {
     private void OnTriggerEnter(UnityEngine.Collider other)
